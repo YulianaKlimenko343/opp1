@@ -24,13 +24,23 @@ public class Group {
         return id;
     }
 
-    public void setId(int id) throws Exception {
+    public void setId(int id) throws Exception
+    {
         
         if (id >= 0) {
             
             this.id = id;
         } else {
+            throw new Exception("id должен быть больше или равен 0");
+        }
+    }
+    public void setGroupId(int id) throws Exception
+    {
+        
+        if (id >= 0) {
             
+            this.id = id;
+        } else {
             throw new Exception("id должен быть больше или равен 0");
         }
     }
